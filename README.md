@@ -21,7 +21,6 @@ O sistema possui as seguintes opções:
 - validação de Opção válida?
 - match case (ou if/elif/else) para direcionar as opções do menu
 - list para armazenar os livros
-- dict para representar cada livro (título, autor, ano, status, usuário)
 - for para procurar/listar livros
 - .append() para adicionar livro
 
@@ -47,6 +46,11 @@ O sistema possui as seguintes opções:
 
 ## Fluxograma
 
+
+## Como Executar
+
+1. Instale o Python 3
+2. Execute o arquivo: main.py
 
 1. Instale o Python 3
 2. Execute o arquivo: main.py
