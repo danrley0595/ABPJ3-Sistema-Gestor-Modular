@@ -16,7 +16,7 @@ O sistema possui as seguintes opções:
 1. O sistema mostra o menu, o usuário digita uma opção e o programa valida:
    Se for inválida -> mostra Opção inválida e volta ao menu.
 2. Cadastrar livro: digita título/autor/ano e o sistema verifica se já existe antes de salvar.
-3. Emprestar livro: informa o título -> se não achar, mostra Livro não encontrado
+3. Emprestar livro: informa o título -> se não achar, mostra Livro não encontrado.
    Se achar e estiver disponível, registra o empréstimo.
    Se não, mostra Livro está emprestado.
 4. Devolver livro: informa o título -> se não achar, Livro não encontrado.
