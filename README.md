@@ -13,6 +13,19 @@ O sistema possui as seguintes opções:
 
 ## Regras do Sistema
 
+1. O sistema mostra o menu, o usuário digita uma opção e o programa valida:
+   Se for inválida -> mostra Opção inválida e volta ao menu.
+2. Cadastrar livro: digita título/autor/ano e o sistema verifica se já existe antes de salvar.
+3. Emprestar livro: informa o título -> se não achar, mostra Livro não encontrado
+   Se achar e estiver disponível, registra o empréstimo.
+   Se não, mostra Livro está emprestado.
+4. Devolver livro: informa o título -> se não achar, Livro não encontrado.
+   Se não estiver emprestado mostra Nada para devolver.
+   Se estiver, devolve e confirma.
+5. Buscar livro: informa o título -> mostra os dados se encontrar.
+   Senão Livro não encontrado.
+6. Depois de qualquer ação, o sistema retorna ao menu ao escolher Sair o programa finaliza.
+
 ## Estrutura Lógica
 - while True para manter o menu rodando
 - validação de Opção válida?
