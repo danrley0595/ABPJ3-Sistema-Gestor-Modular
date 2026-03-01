@@ -29,6 +29,6 @@ while True:
                         "autor": autor,
                         "ano": ano,
                         "status": "Disponível",
-                        "emprestado_para": ""
+                        "usuario": ""
                     })
                 print("Livro Cadastrado com Sucesso!")
