@@ -19,19 +19,28 @@ while True:
         match opcao:
             case "1":
                 print("\n--- Cadastrar livro ---\n")
-                titulo = input("Título: ").strip()
-                autor = input("Autor: ").strip()
-                ano = input("Ano: ").strip()
+                titulo = input("Título: ").strip().lower() 
+                autor = input("Autor: ").strip().lower() 
+                ano = input("Ano: ").strip().lower() 
                 
                 # adicona livro a lista
                 livros.append({
                         "titulo": titulo,
                         "autor": autor,
                         "ano": ano,
-                        "status": "Disponível",
+                        "status": "DISPONIVEL",
                         "usuario": ""
                     })
                 print("Livro Cadastrado com Sucesso!")
+                
+            case "2":
+                print("\n---Lista de livros---\n")
+                if (len(livros) > 0):
+                    for livro in livros:
+                        print(f"Título: {livro["titulo"]} - Autor: {livro["autor"]} - Ano: {livro["ano"]} - Status: {livro["status"]} - Usuário: {livro["usuario"]}\n"
+            )
+                else:
+                    print("\nNenhum livro cadastrado.\n")
             
             case "6":
                 print("Programa Finalizado!")
