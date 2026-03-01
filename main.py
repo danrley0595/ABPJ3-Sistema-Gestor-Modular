@@ -19,9 +19,9 @@ while True:
         match opcao:
             case "1":
                 print("\n--- Cadastrar livro ---\n")
-                titulo = input("Título: ").strip().lower() 
-                autor = input("Autor: ").strip().lower() 
-                ano = input("Ano: ").strip().lower() 
+                titulo = input("Título: ").strip().upper() 
+                autor = input("Autor: ").strip().upper() 
+                ano = input("Ano: ").strip().upper() 
                 
                 # adicona livro a lista
                 livros.append({
@@ -31,7 +31,7 @@ while True:
                         "status": "DISPONIVEL",
                         "usuario": ""
                     })
-                print("Livro Cadastrado com Sucesso!")
+                print("\nLivro Cadastrado com Sucesso!")
                 
             case "2":
                 print("\n---Lista de livros---\n")
