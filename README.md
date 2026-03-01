@@ -1,7 +1,7 @@
 # ABPJ3 - Gestor de Biblioteca
 
 ## Objetivo
-Este projeto da ABPJ3 é um sistema simples de Gestor de Biblioteca feito em Python, usando listas e dicionários para cadastrar livros e controlar empréstimos.
+Este projeto da ABPJ3 é um sistema gestor de biblioteca feito em Python, usando listas e dicionários para cadastrar livros e controlar empréstimos.
 
 O sistema possui as seguintes opções:
 - Cadastrar livro
