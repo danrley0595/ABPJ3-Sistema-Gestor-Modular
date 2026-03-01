@@ -31,7 +31,7 @@ while True:
                         "status": "DISPONIVEL",
                         "usuario": ""
                     })
-                print("\nLivro Cadastrado com Sucesso!\n")
+                print("\nLivro Cadastrado com Sucesso!")
                 
             case "2":
                 print("\n---Lista de livros---\n")
@@ -41,7 +41,14 @@ while True:
             )
                 else:
                     print("\nNenhum livro cadastrado.\n")
-            
+                    
+            case "3":
+                print("\nOpção 3\n")
+                
+            case "4":
+                print("\nOpção 4\n")
+            case "5":
+                print("\nOpção 5\n")
             case "6":
                 print("Programa Finalizado!")
                 break;
