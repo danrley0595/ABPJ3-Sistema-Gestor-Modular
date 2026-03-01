@@ -14,12 +14,10 @@ O sistema possui as seguintes opções:
 
 ## Regras do Sistema
 
-
-
 ## Estrutura Lógica
 - while True para manter o menu rodando
 - validação de Opção válida?
-- match case (ou if/elif/else) para direcionar as opções do menu
+- match case para direcionar as opções do menu
 - list para armazenar os livros
 - for para procurar/listar livros
 - .append() para adicionar livro
