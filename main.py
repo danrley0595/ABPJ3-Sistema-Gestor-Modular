@@ -31,7 +31,7 @@ while True:
                         "status": "DISPONIVEL",
                         "usuario": ""
                     })
-                print("\nLivro Cadastrado com Sucesso!")
+                print("\nLivro Cadastrado com Sucesso!\n")
                 
             case "2":
                 print("\n---Lista de livros---\n")
