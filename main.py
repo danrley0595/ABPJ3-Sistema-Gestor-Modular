@@ -32,3 +32,7 @@ while True:
                         "usuario": ""
                     })
                 print("Livro Cadastrado com Sucesso!")
+            
+            case "6":
+                print("Programa Finalizado!")
+                break;
