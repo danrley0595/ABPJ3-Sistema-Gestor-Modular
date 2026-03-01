@@ -24,8 +24,6 @@ O sistema possui as seguintes opções:
 - for para procurar/listar livros
 - .append() para adicionar livro
 
-
-
 ## Fluxo do Programa
 1. Início  
 2. Apresenta menu com opções  
@@ -45,12 +43,10 @@ O sistema possui as seguintes opções:
 
 
 ## Fluxograma
+<img width="2023" height="1291" alt="fluxograma drawio" src="https://github.com/user-attachments/assets/68516b1d-17f2-4d49-9bab-18ff8bb54fb3" />
 
 
 ## Como Executar
-
-1. Instale o Python 3
-2. Execute o arquivo: main.py
 
 1. Instale o Python 3
 2. Execute o arquivo: main.py
