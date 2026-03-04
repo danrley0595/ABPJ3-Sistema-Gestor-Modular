@@ -60,12 +60,12 @@ def listarLivro():
         
 #função para emprestar o livro, onde verifica se o livro existe          
 def emprestarLivro():
-    titulo = str(input("\nInforme o título do livro que deseja buscar:")).strip().upper()
+    titulo = input("\nInforme o título do livro que deseja buscar:").strip().upper()
     cont = 0
     if (len(livros) > 0):
         for livro in livros:
             if(livro["titulo"] == titulo and livro["status"] == "DISPONIVEL"):
-                usuario = str(input("Informe seu nome: ")).strip().upper()
+                usuario = input("Informe seu nome: ").strip().upper()
                 livro["usuario"] = usuario
                 livro["status"] = "EMPRESTADO"
                 print(f"Livro emprestado com sucesso para {usuario}!")
@@ -82,7 +82,7 @@ def emprestarLivro():
         
 #função para develver um livro emprestado        
 def devolverLivro():
-    titulo = str(input("\nInforme o título do livro que deseja devolver:")).strip().upper()
+    titulo = input("\nInforme o título do livro que deseja devolver:").strip().upper()
     cont = 0
     if (len(livros) > 0):
         for livro in livros:
@@ -103,7 +103,7 @@ def devolverLivro():
         
 #função para buscar um livro pelo nome e listar        
 def buscarLivro():
-    titulo = str(input("\nInforme o título do livro que deseja buscar:")).strip().upper()
+    titulo = input("\nInforme o título do livro que deseja buscar:").strip().upper()
     cont = 0
     if (len(livros) > 0):
         for livro in livros:
