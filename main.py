@@ -108,6 +108,7 @@ def buscarLivro():
     if (len(livros) > 0):
         for livro in livros:
             if(livro["titulo"] == titulo):
+                print("Livro encontrado")
                 print(f"\nTítulo: {livro["titulo"]} - Autor: {livro["autor"]} - Ano: {livro["ano"]} - Status: {livro["status"]} - Usuário: {livro["usuario"]}")
                 cont += 1
         if(cont == 0):
