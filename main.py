@@ -8,7 +8,7 @@ def exibirMenu():
         print("3 - Emprestar livro")
         print("4 - Devolver livro")
         print("5 - Buscar livro por título")
-        print("6 - Sair")
+        print("6 - Sair\n")
         # .Strip para tirar espaços em branco do começo e do fim
         opcao = input("Digitar opção do menu(1 a 6):").strip()
         executarOpcao(opcao)
@@ -26,9 +26,9 @@ def executarOpcao(opcao):
                 case "3":
                     emprestarLivro()
                 case "4":
-                    print("\nOpção 4\n")
+                    devolverLivro()
                 case "5":
-                    print("\nOpção 5\n")
+                    buscarLivro()
                 case "6":
                     sair_Programa()
     
@@ -54,14 +54,13 @@ def listarLivro():
     print("\n---Lista de livros---\n")
     if (len(livros) > 0):
         for livro in livros:
-            print(f"Título: {livro["titulo"]} - Autor: {livro["autor"]} - Ano: {livro["ano"]} - Status: {livro["status"]} - Usuário: {livro["usuario"]}"
-            )
+            print(f"\nTítulo: {livro["titulo"]} - Autor: {livro["autor"]} - Ano: {livro["ano"]} - Status: {livro["status"]} - Usuário: {livro["usuario"]}")
     else:
         print("\nNenhum livro cadastrado.\n")
         
 #função para emprestar o livro, onde verifica se o livro existe          
 def emprestarLivro():
-    titulo = str(input("Informe o título do livro que deseja buscar:")).strip().upper()
+    titulo = str(input("\nInforme o título do livro que deseja buscar:")).strip().upper()
     cont = 0
     if (len(livros) > 0):
         for livro in livros:
@@ -70,17 +69,20 @@ def emprestarLivro():
                 livro["usuario"] = usuario
                 livro["status"] = "EMPRESTADO"
                 print(f"Livro emprestado com sucesso para {usuario}!")
+                cont += 1
                 
             elif(livro["titulo"] == titulo and livro["status"] == "EMPRESTADO"):
-                print("Livro se encontra emprestado!")
+                print("\nLivro se encontra emprestado!")
+                cont += 1
         if(cont == 0):
-            print("Livro não encontrado!")
+            print("\nLivro não encontrado!")
     
     else:
         print("\nNão existe livros cadastrados.\n")
-
+        
+#função para develver um livro emprestado        
 def devolverLivro():
-    titulo = str(input("Informe o título do livro que deseja devolver:")).strip().upper()
+    titulo = str(input("\nInforme o título do livro que deseja devolver:")).strip().upper()
     cont = 0
     if (len(livros) > 0):
         for livro in livros:
@@ -91,7 +93,22 @@ def devolverLivro():
                 cont += 1
                 
             elif(livro["titulo"] == titulo and livro["status"] == "DISPONIVEL"):
-                print("Livro se encontra disponivel não é possivel devolver!")
+                print("\nLivro se encontra disponivel não é possivel devolver!")
+                cont += 1
+        if(cont == 0):
+            print("\nLivro não encontrado!")
+            
+    else:
+        print("\nNão existe livros cadastrados.\n")
+        
+#função para buscar um livro pelo nome e listar        
+def buscarLivro():
+    titulo = str(input("\nInforme o título do livro que deseja buscar:")).strip().upper()
+    cont = 0
+    if (len(livros) > 0):
+        for livro in livros:
+            if(livro["titulo"] == titulo):
+                print(f"\nTítulo: {livro["titulo"]} - Autor: {livro["autor"]} - Ano: {livro["ano"]} - Status: {livro["status"]} - Usuário: {livro["usuario"]}")
                 cont += 1
         if(cont == 0):
             print("Livro não encontrado!")
@@ -99,6 +116,7 @@ def devolverLivro():
     else:
         print("\nNão existe livros cadastrados.\n")
         
+#função para finalizar o programa 
 def sair_Programa():
     print("Programa Finalizado!")
     exit()
